@@ -1,0 +1,53 @@
+<div id="status-overlay" class="hidden">
+  <div class="content"></div>
+</div>
+
+<section id="drop-file" class="drop-file">
+  <div class="notice">
+    <div class="notice-icon"></div>
+    <div class="notice-message">
+      <p>Drop a CSV file anywhere on this page to get the longitude and latitude for each row.</p>
+      <p>The resulting file called <strong><%= ApplicationController::RESULT_CSV_FILE_NAME %></strong> will be automatically downloaded once all rows are processed.</p>
+      <p>
+        Your CSV file must contain Address, Latitude and Longitude columns:
+        <table class="demo-format">
+          <thead>
+            <tr>
+              <th>...</th>
+              <th>Address</th>
+              <th>Latitude</th>
+              <th>Longitude</th>
+              <th>...</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>...</td>
+              <td>Hamilton, New Zealand</td>
+              <td></td>
+              <td></td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td>...</td>
+              <td>Tauranga, New Zealand</td>
+              <td></td>
+              <td></td>
+              <td>...</td>
+            </tr>
+            <tr>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+      <p class="controls">
+        <a class="btn" href="/geocode" alt="Click to download previous results" title="Click to download previous results">Download Previous Results</a>
+      </p>
+    </div>
+  </div>
+</section>
