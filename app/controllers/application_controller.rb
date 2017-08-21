@@ -50,10 +50,4 @@ class ApplicationController < ActionController::Base
   def geocode_update
     render json: { records_processed: @@number_processed || 0, total_records: @@total_records || 0 }
   end
-
-  private
-
-  def google_geocode(address)
-
-  end
 end

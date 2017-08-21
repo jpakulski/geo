@@ -1,24 +1,32 @@
-# README
+# Geo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A tiny Rails app which uses Google API to geocode addresses in the supplied CSV file.
 
-Things you may want to cover:
+![Application screenshot](/screenshot_geo.jpg)
 
-* Ruby version
+## Why?
 
-* System dependencies
+A colleague had to geocode a lot of addresses. This would be an ongoing requirement.
 
-* Configuration
+## Install
 
-* Database creation
+```
+gem install bundler
 
-* Database initialization
+Clone this repository
+cd into the cloned repository
+bundle install
+rails s
+```
 
-* How to run the test suite
+## Use
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Drag-drop your csv file onto the browser window running the application.
+2. The file must include: 'Address', 'Latitude' and 'Longitude' columns (amongst others).
+3. A progress bar will show the number of rows geocoded.
+4. Once the process finishes a file called **geocoded.csv** will be downloaded, containing your original columns with the longitude and latitude filled in.
+5. You can download previous results by clicking the big red button.
 
-* Deployment instructions
+## Background Photo
 
-* ...
+That's a photo showing the [Tauranga](https://goo.gl/maps/oPTfytTSwTK2) waterfront.
