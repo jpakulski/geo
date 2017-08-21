@@ -1,6 +1,6 @@
 # Geo
 
-A tiny Rails app which uses Google API to geocode addresses in the supplied CSV file.
+A tiny Rails app which uses the [Geocoder](https://github.com/alexreisner/geocoder) gem to geocode addresses in the supplied CSV file.
 
 ![Application screenshot](/screenshot_geo.jpg)
 
